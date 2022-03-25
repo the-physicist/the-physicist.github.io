@@ -1,0 +1,408 @@
+/***** RESET *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+/***** GENERAL *****/
+
+html {
+  font-family: Roboto;
+  font-size: large;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+/***** HEADER *****/
+
+#navbar {
+  background-color: #0d32d8;
+  color: #fff;
+  padding: 0 0.9375em;
+  height: 3.75em;
+}
+
+#navbar h2,
+#navbar ul,
+#navbar-list li,
+#navbar nav {
+  display: inline-block;
+}
+
+#navbar h2 {
+  margin: 0;
+  line-height: 2em;
+  margin-left: 3.4375em;
+}
+
+#navbar img {
+  height: 2.5em;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0.625em;
+}
+
+#navbar nav {
+  float: right;
+}
+
+#navbar ul {
+  margin-top: 1.375em;
+}
+
+#navbar li {
+  margin: 0 0.625em;
+}
+
+#navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar-list li a:hover {
+  border-bottom: 0.0625em solid #fff;
+}
+
+/***** BANNER *****/
+
+#main-banner {
+  height: 70vh;
+  background-image: url('../img/bg-projeto.jpg');
+  background-size: cover;
+  padding-top: 15vh;
+}
+
+#banner-info {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  padding: 3.125em;
+}
+
+#banner-info img {
+  height: 7.5em;
+  border-radius: 24%;
+  background-color: #0d32d8;
+  margin-top: 1.825em;
+  margin-bottom: 1.825em;
+}
+
+#banner-info p {
+  background-color: #0d32d8;
+  font-weight: bold;
+  width: 12.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+/***** ABOUT *****/
+
+#about-section {
+  text-align: center;
+  background-color: #0d32d8;
+  color: #fff;
+  padding-top: 3.125em;
+  height: 21.875em;
+}
+
+#about-section h2 {
+  margin-bottom: 1.25em;
+}
+
+#about-section p {
+  max-width: 40.625em;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.875em;
+}
+
+#about-section a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#about-section a:hover {
+  border-bottom: 0.0625em solid #fff;
+}
+
+/***** SKILLS *****/
+
+#skills-section {
+  margin-top: -6.25em;
+  background-color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5em solid #ddd;
+  border-radius: 0.625em;
+}
+
+#skills-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-container {
+  flex: 1 1 1;
+  text-align: center;
+  padding: 3.75em 1.5625em;
+}
+
+.skills-center {
+  border-left: 0.5em solid #ccc;
+  border-right: 0.5em solid #ccc;
+}
+
+.skills-container h3 {
+  color: #0d32d8;
+  font-size: 1.25em;
+}
+
+.skills-container img {
+  height: 3.75em;
+  padding: 0.93em;
+  margin-bottom: 1.5625em;
+  border-top: 0.0625em solid #0d32d8;
+  border-left: 0.0625em solid #0d32d8;
+  border-bottom: 0.25em solid #0d32d8;
+  border-right: 0.25em solid #0d32d8;
+}
+
+.skills-container .skills-subtitle {
+  font-weight: bold;
+  color: #0d32d8;
+  margin-top: 3.125em;
+  margin-bottom: 0.9375em;
+  line-height: 1.5625em;
+}
+
+.skills-container p {
+  line-height: 1.5625em;
+}
+
+/***** JOBS *****/
+
+#jobs-section {
+  text-align: center;
+  padding-top: 3.125em;
+}
+
+#jobs-section h2 {
+  color: #0d32d8;
+  margin-bottom: 1.875em;
+}
+
+#jobs-section p {
+  margin-bottom: 3.125em;
+}
+
+#jobs-section a {
+  font-weight: bold;
+  color: #0d32d8;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.125em;
+}
+
+.job-box {
+  flex: 1 1 12.5em;
+  margin-left: 1.5625em;
+  margin-right: 1.5625em;
+  height: 18.75em;
+  background-size: cover;
+  border-right: 0.125em solid #0d32d8;
+  border-bottom: 0.125em solid #0d32d8;
+}
+
+.project1 {
+  background-image: url('../img/proj1.jpg');
+}
+
+.project2 {
+  background-image: url('../img/proj2.jpg');
+}
+
+.project3 {
+  background-image: url('../img/proj3.jpg');
+}
+
+/***** FOOTER *****/
+
+footer {
+  padding: 3.125em;
+  background-color: #0d32d8;
+  color: #fff;
+  text-align: center;
+}
+
+footer img {
+  height: 3.125em;
+  margin: 1.875em 0;
+}
+
+footer p {
+  margin-top: 1.5625em;
+}
+
+footer form {
+  width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer input,
+footer textarea,
+footer button {
+  border: none;
+  box-sizing: border-box;
+  padding: 0.9375em;
+  margin-bottom: 1.25em;
+  width: 100%;
+  display: block;
+}
+
+.form-button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer .copyright {
+  font-weight: bold;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/***** MEDIA QUERY 420px vs 734px *****/
+
+@media (max-width: 450px) {
+  /** general **/
+
+  p,
+  input,
+  textarea,
+  #navbar-list li a {
+    font-size: 1.2rem;
+  }
+
+  /** navbar **/
+
+  #navbar h2 {
+    display: none;
+  }
+
+  #navbar img {
+    top: 0.5625em;
+  }
+
+  #navbar ul {
+    margin-top: 1.1rem;
+  }
+
+  /*** banner ***/
+
+  #main-banner {
+    height: 50vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  #banner-info {
+    width: 60%;
+  }
+
+  #banner-info p {
+    margin: 0;
+    width: auto;
+  }
+
+  /*** about ***/
+
+  #about-section {
+    padding: 2rem;
+    padding-bottom: 3.125em;
+    height: auto;
+  }
+
+  /*** skills ***/
+
+  #skills-section {
+    margin-top: -2.1875em;
+    width: 90%;
+  }
+
+  #skills-section .container {
+    flex-direction: column;
+  }
+
+  .skills-container h3,
+  .skills-container .skills-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .skills-container {
+    padding-bottom: 1.5625em;
+  }
+
+  .skills-container.skills-center {
+    border-top: 0.125em solid #ddd;
+    border-bottom: 0.125em solid #ddd;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  /*** jobs ***/
+
+  #jobs-section h2,
+  #jobs-section p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .job-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .job-box {
+    margin-bottom: 2rem;
+    flex: 1 1 18.75em;
+  }
+
+  /*** footer ***/
+
+  footer {
+    padding: 3.125em 0.9375em;
+  }
+
+  footer form {
+    width: 100%;
+  }
+
+  .copyright {
+    display: block;
+    margin-top: 0.625em;
+  }
+}
