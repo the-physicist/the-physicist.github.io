@@ -28,10 +28,20 @@ Execute o arquivo `index.html` em seu navegador favorito.
 
 ## Aprendizados
 
-- Comunicação com API externa;
+### 25/03/2022
+
+- Resolução do bug de 'variável somente em modo leitura' e problemas de escopo global;
+- Depurar usando a aba 'Redes' da ferramenta devtools;
+
+### 22/03/2022
+
 - Criação de um arquivo CHANGELOG;
 - Experiência lendo documentação de API;
-- Solução de bugs.
+
+### 19/03/2022
+
+- Comunicação com API externa;
+- Entender melhor sobre o gradient-color;
 
 ## Roadmap
 

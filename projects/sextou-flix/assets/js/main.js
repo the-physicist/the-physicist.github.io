@@ -19,7 +19,7 @@ const moviesByGenreContainer = document.querySelector(
   '.movies-by-genre__container'
 )
 
-const genre = 99 // Default genre (Documentary)
+let genre = 99 // Default genre (Documentary)
 
 function showPopularMovies(data) {
   popularMoviesContainer.innerHTML = ''
@@ -80,10 +80,23 @@ function getMoviesByGenre(url) {
 }
 
 function getGenreByFilter(genre) {
-  MOVIES_BY_GENRE_URL = `${BASE_URL}/discover/movie?${API_KEY}&language=pt-BR&sort_by=popularity.desc&with_genres=${genre}`
-  console.log(MOVIES_BY_GENRE_URL)
-  return getMoviesByGenre(MOVIES_BY_GENRE_URL)
+  const url = `${BASE_URL}/discover/movie?${API_KEY}&language=pt-BR&sort_by=popularity.desc&with_genres=${genre}`
+  console.log(url)
+  return getMoviesByGenre(url)
 }
+
+let genreButtons = document.getElementsByClassName('movies-by-genre__button')
+console.log(genreButtons)
+
+Array.prototype.map.call(genreButtons, genreButton =>
+  genreButton.addEventListener('click', function () {
+    console.log(genreButton)
+    getGenreByFilter(genreButton.dataset.value)
+    console.log(genreButton.dataset.values)
+    console.log(genreButton.dataset)
+  })
+)
 
 getPopularMovies(POPULAR_MOVIES_URL)
 getMoviesByGenre(MOVIES_BY_GENRE_URL)
+// getGenreByFilter(genre);
