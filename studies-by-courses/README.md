@@ -1,6 +1,6 @@
 # Studies by courses
 
-![Repository cover saying "studies by courses" and "know how to solve every problem that has been solved" with a light florest background](/cover-studies.png "Repository cover")
+![Repository cover saying "studies by courses" and "know how to solve every problem that has been solved" with a light florest background](./cover-studies.png?raw=true 'Repository cover')
 
 ## Description
 
@@ -17,5 +17,3 @@ In addition, this repository can also help other people providing practical and 
 At the moment, you can track my studies in each of these areas:
 
 - [Web Development](/web-development/)
-
-
