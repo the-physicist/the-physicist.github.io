@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  overflow-x: hidden;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questions-container {
+  text-align: center;
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px;
+  padding: 64px;
+}
+
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+input {
+  margin: 20px 0;
+  padding: 8px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+  border: 2px solid #0e1d2f;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 2px solid #0e1d2f;
+}
+button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #3468a7;
+  color: #ecf4ff;
+}
+
+#answers {
+  text-align: center;
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px;
+  padding: 64px;
+}
