@@ -1,0 +1,70 @@
+/* Template settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+}
+
+/* Particular settings */
+
+main.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.panel {
+  color: #fff;
+  cursor: pointer;
+  height: 80vh;
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  margin: 10px;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.5s ease-in-out;
+}
+
+.panel h3 {
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
