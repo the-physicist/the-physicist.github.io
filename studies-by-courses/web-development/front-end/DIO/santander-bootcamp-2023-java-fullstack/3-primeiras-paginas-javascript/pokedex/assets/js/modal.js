@@ -23,13 +23,3 @@ function handleClickOutside(event) {
     document.removeEventListener("click", handleClickOutside, false);
   }
 }
-
-// const handleClickOutside = (event) => {
-//   let overlay = document.getElementById("my-modal");
-//   let modal = document.getElementById("pokemonListDetails");
-//   if (!modal.contains(event.target)) {
-//     modal.style.display = "none";
-//     overlay.style.display = "none";
-//     document.removeEventListener("click", handleClickOutside, false);
-//   }
-// };
