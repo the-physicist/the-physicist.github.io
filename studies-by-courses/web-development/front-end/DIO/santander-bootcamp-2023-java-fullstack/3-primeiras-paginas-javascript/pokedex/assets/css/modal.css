@@ -1,6 +1,7 @@
-header {
+header.card-header {
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-size: 3em;
 }
@@ -31,6 +32,15 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  text-transform: capitalize;
+}
+
+.title-values h1 {
+  font-size: 1em;
+}
+
+.title-values h2 {
+  font-size: 0.5em;
 }
 
 span {
@@ -80,8 +90,9 @@ span {
   justify-content: center;
 }
 
-.pokemonsModal {
-  width: 100%;
+.card-header__buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pokemonOpen {

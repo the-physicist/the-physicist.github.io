@@ -1,6 +1,6 @@
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
-const detailsModal = document.getElementById("pokemonListDetails");
+const detailsModal = document.getElementById("modalContent");
 
 const maxRecords = 151;
 const limit = 10;
@@ -36,11 +36,13 @@ function loadPokemonItems(offset, limit) {
 function requestPokemonDetail(pokemonID) {
   pokeApi.getPokemonDetailsForModal(pokemonID).then((pokemonDetail = []) => {
     detailsModal.innerHTML = `
-      <header class="${pokemonDetail.type}">
-      <div>
-        <a href="javascript:history.back()"> &larr; </a>
+      <header class="${pokemonDetail.type} card-header">
+      <div class="card-header__buttons">
+        <div>
+          <a href="javascript:history.back()"> &larr; </a>
+        </div>
+        <div>&hearts;</div>
       </div>
-      <div>&hearts;</div>
     
       <div id="title" class="title-values">
         <h1 style="font-size: 2.4em">${pokemonDetail.name}</h1>

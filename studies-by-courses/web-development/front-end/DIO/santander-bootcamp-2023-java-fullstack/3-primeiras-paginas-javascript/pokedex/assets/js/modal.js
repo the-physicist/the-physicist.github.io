@@ -1,5 +1,5 @@
 let modalContainer = document.getElementById("my-modal");
-let modalDetailsContainer = document.getElementById("pokemonListDetails");
+let modalDetailsContainer = document.getElementById("modalContent");
 
 function openModal() {
   modalContainer.style.display = "block";
@@ -16,7 +16,7 @@ function closeModal() {
 
 function handleClickOutside(event) {
   let overlay = document.getElementById("my-modal");
-  let modal = document.getElementById("pokemonListDetails");
+  let modal = document.getElementById("modalContent");
   if (!modal.contains(event.target)) {
     modal.style.display = "none";
     overlay.style.display = "none";
